@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+        margin:0;
+        padding:0;
+        }
+        .btn{
+
+        }
+    </style>
+</head>
+<body>
+<p>
+    <label for="comment">评论：</label>
+    <input type="text" id="comment" placeholder="请输入你的评论！">
+
+</p>
+<p><input type="button" class="btn" value="评论"></p>
+<div >这是第一条评论</div>
+<script>
+
+    var obj =document.querySelector("div");
+    var input=document.querySelectorAll("input");
+
+    input[1].onclick=function(){
+    var text = input[0].value;
+    obj.innerText=text;
+
+    }
+</script>
+</body>
+</html>
